@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQs - DriveKaro</title>
+    <!--Icon Scout CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Swiper Js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./faqs.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="../index.html" class="nav__logo">DriveKaro</a>
+            <div class="nav__content">
+                <menu class="nav__menu">
+                    <a href="../index.html">Home</a>
+                    <a href="../about/about-us.html">About</a>
+                    <a href="../gallery/gallery.html">Gallery</a>
+                    <a href="../programs/programs.html">Programs</a>
+                    <a href="./faqs.html" class="active">FAQs</a>
+                    <a href="../contact/contact.html">Contact Us</a>
+                </menu>
+                <button class="theme__btn"><i class="uil uil-moon"></i></button>
+                <button class="nav__menu-open"><i class="uil uil-bars"></i></button>
+                <button class="nav__menu-close"><i class="uil uil-multiply"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <header class="page__header">
+        <div class="page__header-content">
+            <h2>Frequently Asked Questions</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Distinctio, laborum sunt
+            quo quaerat unde mollitia!</p>
+        </div>
+    </header>
+
+
+
+
+
+
+    <menu class="container faqs">
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Will you arrange for a driver's licence for me?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, we start processing your licence right from the day we
+                present you to DVLA for your learner's licence.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Is it compulsory that I go to DVLA for the tests?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes. It is only DVLA that can issue a valid driving licence for
+                student drivers. Therefore, the theory and practical tests are 
+                compulsory.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>What is duration of the Program?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                the regular package lasts 6 weeks,the express
+                lasts 3 weeks and polishing lasts 4 weeks.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>What is duration of the Program?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                the regular package lasts 6 weeks,the express
+                lasts 3 weeks and polishing lasts 4 weeks.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Do I need to go through the Theory Lessons?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes. It is mandated by DVLA that student drivers go
+                through 12 topics on defensive driving before obtaining
+                a learner's license. 
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Do You Have a Shorter Period of Completion?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                The Shorted completion period we have is 3 weeks and 
+                that is Express course.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>I can Drive.Can I get Drivers License Only?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes. you can.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>I Know How To Drive But I am not very Good.How can you Help?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                You Will Have to opt for the polishing freshers program.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Can I Choose My Preferred Instructor?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Unfortunately No. Instructors are assigned to practical
+                sessions based on their availability.
+            </p>
+        </article>
+
+        <a href="mailto:youremail@gmail.com" class="btn primary" target="_blank">Have more questions? Ask us directly!</a>
+    </menu>
+
+
+
+
+    
+    <!--======================= Footer ==========================-->
+    <footer>
+        <div class="container footer__container">
+            <menu class="footer__menu">
+                <a href="#">Privacy</a>
+                <a href="#">Terms and conditions</a>
+                <a href="#">Other Interest</a>
+            </menu>
+            <menu class="footer__socials">
+                <a href="#" target="_blank"><i class="uil uil-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-facebook"></i></a>
+            </menu>
+        </div>
+        <small class="footer__copyright">
+            &copy; 2025 DriveKaro. All Rights Reserved.
+        </small>
+    </footer>
+
+
+
+
+
+
+        <script>
+            const faqs = document.querySelectorAll('.faq')
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    faq.classList.toggle('show')
+                    if(faq.classList.contains('show')) {
+                        faq.querySelector('i').className = "uil uil-angle-up"
+                    } else {
+                        faq.querySelector('i').className = "uil uil-angle-down"
+                    }
+                })
+            });
+        </script>
+        <script src="../main.js"></script>
+    </body>
+    </html>
